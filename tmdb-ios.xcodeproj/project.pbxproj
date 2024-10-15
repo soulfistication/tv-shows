@@ -21,6 +21,8 @@
 		B26C5EC62CBAC063007AD9E8 /* tmdb_iosUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B26C5EC52CBAC063007AD9E8 /* tmdb_iosUITestsLaunchTests.m */; };
 		B26C5ED82CBB24CB007AD9E8 /* IDNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B26C5ED72CBB24CB007AD9E8 /* IDNetworkClient.m */; };
 		B26C5EDD2CBB706A007AD9E8 /* IDTVShow.m in Sources */ = {isa = PBXBuildFile; fileRef = B26C5EDC2CBB706A007AD9E8 /* IDTVShow.m */; };
+		B26C5EE02CBDA336007AD9E8 /* IDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26C5EDF2CBDA336007AD9E8 /* IDLoginViewController.m */; };
+		B2F7E25D2CBDC8F30086DB0C /* UIView+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F7E25C2CBDC8F30086DB0C /* UIView+Gradient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,10 @@
 		B26C5ED72CBB24CB007AD9E8 /* IDNetworkClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDNetworkClient.m; sourceTree = "<group>"; };
 		B26C5EDB2CBB706A007AD9E8 /* IDTVShow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDTVShow.h; sourceTree = "<group>"; };
 		B26C5EDC2CBB706A007AD9E8 /* IDTVShow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDTVShow.m; sourceTree = "<group>"; };
+		B26C5EDE2CBDA336007AD9E8 /* IDLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDLoginViewController.h; sourceTree = "<group>"; };
+		B26C5EDF2CBDA336007AD9E8 /* IDLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDLoginViewController.m; sourceTree = "<group>"; };
+		B2F7E25B2CBDC8F30086DB0C /* UIView+Gradient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Gradient.h"; sourceTree = "<group>"; };
+		B2F7E25C2CBDC8F30086DB0C /* UIView+Gradient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Gradient.m"; sourceTree = "<group>"; };
 		B488F3C8CF4FEA910A3615BA /* Pods-tmdb-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmdb-iosTests.release.xcconfig"; path = "Target Support Files/Pods-tmdb-iosTests/Pods-tmdb-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		C5C0AF6673155564ADE876B9 /* Pods-tmdb-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmdb-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-tmdb-iosTests/Pods-tmdb-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD2B4C1B2252EE8344FE9874 /* Pods-tmdb-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmdb-ios.debug.xcconfig"; path = "Target Support Files/Pods-tmdb-ios/Pods-tmdb-ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +129,7 @@
 		B26C5E9C2CBAC062007AD9E8 /* tmdb-ios */ = {
 			isa = PBXGroup;
 			children = (
+				B2F7E25A2CBDC8820086DB0C /* Extension */,
 				B26C5ED32CBB2470007AD9E8 /* Model */,
 				B26C5ED42CBB24AC007AD9E8 /* View */,
 				B26C5ED52CBB24B1007AD9E8 /* Controller */,
@@ -178,6 +185,8 @@
 		B26C5ED52CBB24B1007AD9E8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B26C5EDE2CBDA336007AD9E8 /* IDLoginViewController.h */,
+				B26C5EDF2CBDA336007AD9E8 /* IDLoginViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -198,6 +207,15 @@
 				B26C5EDC2CBB706A007AD9E8 /* IDTVShow.m */,
 			);
 			path = JSONModels;
+			sourceTree = "<group>";
+		};
+		B2F7E25A2CBDC8820086DB0C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B2F7E25B2CBDC8F30086DB0C /* UIView+Gradient.h */,
+				B2F7E25C2CBDC8F30086DB0C /* UIView+Gradient.m */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		D2700A6BE794E8296FA36079 /* Frameworks */ = {
@@ -419,7 +437,9 @@
 			files = (
 				B26C5EA52CBAC062007AD9E8 /* ViewController.m in Sources */,
 				B26C5EDD2CBB706A007AD9E8 /* IDTVShow.m in Sources */,
+				B2F7E25D2CBDC8F30086DB0C /* UIView+Gradient.m in Sources */,
 				B26C5ED82CBB24CB007AD9E8 /* IDNetworkClient.m in Sources */,
+				B26C5EE02CBDA336007AD9E8 /* IDLoginViewController.m in Sources */,
 				B26C5E9F2CBAC062007AD9E8 /* AppDelegate.m in Sources */,
 				B26C5EB02CBAC063007AD9E8 /* main.m in Sources */,
 				B26C5EA22CBAC062007AD9E8 /* SceneDelegate.m in Sources */,
